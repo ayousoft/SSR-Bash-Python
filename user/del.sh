@@ -81,5 +81,7 @@ if [[ $lsid == 1 || $lsid == 2 ]];then
                         /etc/init.d/iptables restart
                 fi
         fi
+        limit="a"
+        bash /usr/local/SSR-Bash-Python/timelimit.sh e ${port} ${limit}
    fi
 fi
